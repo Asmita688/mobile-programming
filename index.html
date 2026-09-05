@@ -1,5 +1,81 @@
 <!DOCTYPE html>
-<html>
-<h1>Hello World!</h1>
-<p>My first webpage.</p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkGuard — Is this link safe?</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="blur-glow glow-1"></div>
+    <div class="blur-glow glow-2"></div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-badge">🛡️</span> LinkGuard
+        </div>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#checker" class="nav-btn">Check Link</a>
+        </div>
+    </nav>
+
+    <main class="hero" id="checker">
+        <div class="badge">
+            <span class="pulse-dot"></span> Real-time URL Scanner
+        </div>
+        
+        <h1>Don't click blind.<br><span class="gradient-text">Verify first.</span></h1>
+        <p class="subtitle">Drop any suspicious link below. We'll scan for scams, malware, and hidden redirects instantly.</p>
+
+        <form class="scanner-card" onsubmit="event.preventDefault();">
+            <div class="input-wrapper">
+                <span class="input-icon">🔗</span>
+                <input type="url" placeholder="Paste link here (e.g., https://bit.ly/3x...)" required>
+                <button type="submit" class="btn-scan">
+                    <span>Scan</span>
+                    <span class="arrow">→</span>
+                </button>
+            </div>
+            <div class="pill-tags">
+                <span class="pill">⚡ Instant check</span>
+                <span class="pill">🔒 SSL verification</span>
+                <span class="pill">🕵️ Trace redirects</span>
+            </div>
+        </form>
+    </main>
+
+    <section class="features" id="features">
+        <div class="section-header">
+            <h2>Built for modern web safety.</h2>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <div class="icon-box">🛡️</div>
+                <h3>Domain Reputation</h3>
+                <p>Cross-references target domains against live threat databases and malicious domain registries.</p>
+            </div>
+            <div class="card">
+                <div class="icon-box">⚡</div>
+                <h3>Redirect Trace</h3>
+                <p>Unmasks shortened links (bit.ly, t.co) to reveal their true destination before you visit.</p>
+            </div>
+            <div class="card">
+                <div class="icon-box">🔐</div>
+                <h3>SSL Guard</h3>
+                <p>Verifies active encryption certificates and protects against lookalike phishing traps.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 LinkGuard • Simple cybersecurity for everyone.</p>
+    </footer>
+
+</body>
 </html>
