@@ -1,5 +1,5 @@
 :root {
-    --bg-warm: #faf7f2;
+    --bg-warm: #ca9f56;
     --card-bg: rgba(255, 255, 255, 0.85);
     --card-border: rgba(226, 217, 203, 0.6);
     --accent-warm: #e06d53; /* Soft Terracotta */
@@ -130,6 +130,7 @@ h1 {
     letter-spacing: -0.02em;
     line-height: 1.15;
     margin-bottom: 18px;
+     align-items: center;
 }
 
 .warm-text {
